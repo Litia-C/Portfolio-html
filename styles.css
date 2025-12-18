@@ -4,7 +4,7 @@
 }
 /* Estructura del Header */
 header {
-    background-color: gray;
+    background-color: pink;
     display: flex;
     flex-direction: column;
 }
@@ -17,13 +17,16 @@ header {
     justify-content: center;
     grid-gap: 2em;
 }
-.InfoHeader > h2{
+.InfoHeader > h2, .InfoHeader > a {
     text-align: center;
+}
+.InfoHeader > h2{
+    font-size: 2rem;
     grid-column:1/1 ;
     grid-row: 1/2;
 }
 .InfoHeader > a{
-    text-align: center;
+    font-size: 1.5rem;
     grid-column:1/1 ;
     grid-row: 2/3;
 }
