@@ -9,6 +9,7 @@ header {
     flex-direction: column;
 }
 .InfoHeader {
+    padding: 2em;
     display: grid;
     grid-template-rows: 1fr, 1fr;
     grid-template-columns: 1fr, 2fr ;
@@ -22,6 +23,7 @@ header {
     grid-row: 1/2;
 }
 .InfoHeader > a{
+    text-align: center;
     grid-column:1/1 ;
     grid-row: 2/3;
 }
