@@ -1,0 +1,9 @@
+
+
+/* Estructura del Header */
+header {
+    display: flex;
+}
+.NombreTitulo {
+    font-size: 40px;
+}
