@@ -18,7 +18,7 @@ header {
     grid-gap: 2em;
 }
 .InfoHeader > h2{
-    justify-content: center;
+    text-align: center;
     grid-column:1/1 ;
     grid-row: 1/2;
 }
