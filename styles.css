@@ -62,7 +62,9 @@ header {
 }
 
 /*Estructura main*/
-
+main {
+    background-color: aquamarine;
+}
 
 
 /* Botones */
