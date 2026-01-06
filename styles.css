@@ -63,6 +63,7 @@ header {
 
 /*Estructura main*/
 main {
+    padding: 2em;
     background-color: aquamarine;
 }
 
