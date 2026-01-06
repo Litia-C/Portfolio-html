@@ -18,6 +18,9 @@ h3 {
 .negrita {
     font-weight: bold;
 }
+div {
+    padding: 1rem;
+}
 
 /* Estructura del Header */
 header {
