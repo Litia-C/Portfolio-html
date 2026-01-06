@@ -11,8 +11,6 @@ header {
 .InfoHeader {
     padding: 2em;
     display: grid;
-    grid-template-rows: 1fr, 1fr;
-    grid-template-columns: 1fr, 2fr ;
     align-self: center;
     justify-content: center;
     grid-gap: 2em;
@@ -37,4 +35,12 @@ header {
 .NombreTitulo {
     text-align: center;
     font-size: 40px;
+}
+
+/* Botones */
+.boton-subir {
+    right: 2rem;
+    bottom: 2rem;
+    position: fixed;
+
 }
