@@ -1,9 +1,12 @@
-/* Estructura del Header */
+
 header {
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
 }
+
+/*Info principal*/
+
 .InfoHeader {
     padding: 2em;
     padding-top: 1em;
@@ -38,9 +41,30 @@ header {
     font-size: 40px;
 }
 
-/*Estructura main*/
+/*Tabla*/
 table {
     border-color: black;
     border-style: solid;
     border-width: 5px;
+}
+
+/*Listas*/
+
+.estudios > ul > li::marker {
+    content: "📗";
+}
+.estudios > ul > li:hover::marker {
+    content: "📖";
+}
+.habilidades > ul > li::marker {
+    content: "⚙️";
+}
+.habilidades > ul > li:hover::marker {
+    content: "🔩";
+}
+.softskills > ul > li::marker {
+    content: "🪶";
+}
+.softskills > ul > li:hover::marker {
+    content: "✒️";
 }
