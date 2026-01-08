@@ -21,16 +21,24 @@ h3 {
 div {
     padding: 1rem;
 }
-
-footer {
-    text-align: center;
+body {
     background-color: coral;
+}
+header {
+    background-color: pink;
 }
 
 main {
     padding: 2em;
     background-color: aquamarine;
 }
+
+footer {
+    text-align: center;
+    background-color: coral;
+    background-size: cover;
+}
+
 
 
 /* Botones */
