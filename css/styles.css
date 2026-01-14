@@ -33,17 +33,18 @@ header {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+    "a b" 
+    ;
     background-color: rgb(255, 255, 255);
 }
-
 footer {
     text-align: center;
     background-color: coral;
     background-size: cover;
 }
-
-
-
 /* Botones */
 .boton-subir {
     right: 2rem;
@@ -51,11 +52,13 @@ footer {
     position: fixed;
 }
 /* Menú */
+.no-hamburger {
+    grid-area: "b";
+}
 .hamburger {
+    grid-area: "a";
     position: sticky;
     padding: 0;
-    top: 0;
-    right: 0;
     background: rgb(206, 54, 80);
     display: flex;
     align-items: center;
@@ -64,6 +67,9 @@ footer {
 .hamburger-items{
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 .hamburger-item{
     display: flex;
@@ -80,16 +86,17 @@ footer {
 .hamburger::before {
     position: absolute;
     content: "X";
+    font-size: 120px;
     top: 0;
     left: 0;    
 }
 .hamburger .hamburger-items{
     width: 100%;
     border-radius: 0;
-    max-height: 0;
+    max-width: 0;
     overflow: hidden;
     transition: 0.25s;
 }
 #hamburger:checked ~ .hamburger-items {
-    max-width: 10em;
+    max-width: 15em;
 }
