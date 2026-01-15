@@ -63,6 +63,7 @@ img {
     position: fixed;
 }
 #lado {
+    font-size: 2em;
     z-index: 2;
     position: sticky;
     margin-top: 20px;
