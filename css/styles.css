@@ -33,11 +33,6 @@ header {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:
-    "a b" 
-    ;
     background-color: rgb(255, 255, 255);
 }
 footer {
@@ -51,28 +46,38 @@ footer {
     bottom: 2rem;
     position: fixed;
 }
-/* Menú */
-.no-hamburger {
-    grid-area: "b";
-}
-.hamburger {
-    grid-area: "a";
+#lado {
     position: sticky;
+    margin-top: 20px;
+    margin-left: 20px;
+    top: 0.3em;
+    right: 3em;
+}
+/* Menú */
+
+#hamburger { display: none;}
+
+.hamburger {
+    position: sticky;
+    top: 1em;
+    right: 0;
     padding: 0;
     background: rgb(206, 54, 80);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 0;
+    visibility: hidden;
+    
 }
 .hamburger-items{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     position: sticky;
-    top: 0;
-    right: 0;
 }
 .hamburger-item{
     display: flex;
+    
     padding-left: 0.3em;
     padding-right: 0.3em;
     margin: 0.25em;
@@ -83,13 +88,6 @@ footer {
     background-color: aqua;
     border-radius: 10px;
 }
-.hamburger::before {
-    position: absolute;
-    content: "X";
-    font-size: 120px;
-    top: 0;
-    left: 0;    
-}
 .hamburger .hamburger-items{
     width: 100%;
     border-radius: 0;
@@ -97,6 +95,10 @@ footer {
     overflow: hidden;
     transition: 0.25s;
 }
-#hamburger:checked ~ .hamburger-items {
+#hamburger:checked ~ .hamburger-items, #hamburger:checked ~ .hamburger {
+    visibility: visible;
     max-width: 15em;
+}
+#hamburger:checked ~ main, #hamburger:checked ~ header, #hamburger:checked ~ footer {
+
 }
