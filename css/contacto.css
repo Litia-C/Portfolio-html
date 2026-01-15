@@ -1,0 +1,18 @@
+.no-hamburger{
+    padding: 2em;
+}
+.telefono::marker {
+    content: "📞";
+}
+.telefono:hover::marker {
+    content: "📶";
+}
+.correo::marker {
+    content: "📪";
+}
+.correo:hover::marker {
+    content: "📬";
+}
+.ciudad::marker {
+    content: "📍";
+}
