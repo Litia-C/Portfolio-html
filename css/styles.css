@@ -25,10 +25,18 @@ h3 {
 div {
     padding: 1rem;
 }
-body {
+:root {
     background-color: coral;
 }
+body {
+    background-color: coral;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 header {
+    text-align: center;
+    margin: 0, auto;
     background-color: pink;
 }
 
@@ -36,9 +44,15 @@ main {
     background-color: rgb(255, 255, 255);
 }
 footer {
+    position: relative;
     text-align: center;
     background-color: coral;
     background-size: cover;
+    bottom: 5em;
+}
+.no-hamburger{
+    position: relative;
+    top: -10em;
 }
 /* Botones */
 .boton-subir {
@@ -47,6 +61,7 @@ footer {
     position: fixed;
 }
 #lado {
+    z-index: 2;
     position: sticky;
     margin-top: 20px;
     margin-left: 20px;
@@ -55,24 +70,20 @@ footer {
 }
 /* Menú */
 
-#hamburger { display: none;}
-
 .hamburger {
+    z-index: 2;
     position: sticky;
     top: 1em;
     right: 0;
     padding: 0;
-    background: rgb(206, 54, 80);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 0;
+
     visibility: hidden;
     
 }
 .hamburger-items{
-    display: flex; 
-    flex-direction: column;
+    position: relative;
     position: sticky;
 }
 .hamburger-item{
@@ -95,10 +106,8 @@ footer {
     overflow: hidden;
     transition: 0.25s;
 }
-#hamburger:checked ~ .hamburger-items, #hamburger:checked ~ .hamburger {
+#hamburger:checked ~ .hamburger-items, #hamburger:checked ~ .hamburger{
     visibility: visible;
+    opacity: 1;
     max-width: 15em;
-}
-#hamburger:checked ~ main, #hamburger:checked ~ header, #hamburger:checked ~ footer {
-
 }
