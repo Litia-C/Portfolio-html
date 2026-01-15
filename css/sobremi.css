@@ -16,6 +16,9 @@ header {
     justify-content: center;
     grid-gap: 2em;
 }
+.InfoHeader > p {
+    text-align: center;
+}
 .InfoHeader > img {
     display: block;
     border-radius: 20%;

@@ -1,3 +1,7 @@
+/*Colores*/
+:root {
+
+}
 /* Detalles generales */
 html {
     scroll-behavior: smooth;
@@ -46,6 +50,9 @@ footer {
     background-color: coral;
     background-size: cover;
 }
+img {
+   box-shadow: 10px 5px 5px ;
+}
 .no-hamburger{
     position: relative;
 }
@@ -62,6 +69,10 @@ footer {
     margin-left: 20px;
     top: 0.3em;
     right: 3em;
+}
+#lado:hover {
+    cursor: pointer;
+    background-color: lightgray;
 }
 /* Menú */
 
