@@ -1,8 +1,6 @@
 
 header {
     padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
 }
 
 /*Info principal*/
@@ -10,7 +8,7 @@ header {
 .InfoHeader {
     padding: 2em;
     padding-top: 1em;
-    /*display: grid;*/
+    
     text-align: justify;
     align-self: center;
     justify-content: center;
@@ -78,4 +76,19 @@ tr {
 }
 .softskills > ul > li:hover::marker {
     content: "✒️";
+}
+@media screen and (width > 900px) {
+* {
+    font-size: 1.01em;
+}
+.InfoHeader {
+    display: grid;
+}
+.InfoHeader > .parrafo{
+    font-size: 2em;
+    text-align: justify;
+}
+img {
+    width: 30em;
+}
 }
