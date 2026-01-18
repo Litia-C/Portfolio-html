@@ -21,6 +21,7 @@ html {
     sans-serif;
 }
 h1 {
+    margin: 0 2em;
   font-size: 1.3em;
 }
 h2 {
@@ -37,7 +38,7 @@ h3 {
   font-weight: bold;
 }
 div {
-  padding: 1rem;
+  
 }
 body {
   background-color: coral;
@@ -49,11 +50,12 @@ body {
   flex-direction: column;
 }
 header {
-    max-height: 10em;
+    
+    max-height: fit-content;
     position: sticky;
     top: 0;
-  z-index: 0;
-  background-color: pink;
+    right: 0;
+    background-color: pink;
 }
 
 main {
@@ -80,17 +82,18 @@ img {
 
 .hamb-menu {
   width: 100%;
-  height: fit-content;
+  max-height: 4em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  background-color: pink;
 }
 .icono {
+    margin: 0 1em;
   width: fit-content;
   font-weight: 600;
-  padding: 1.01em;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -102,12 +105,15 @@ img {
 }
 
 .items {
-  width: fit-content;
-  display: flex;
+    display: flex;
+  width: 100%;
+  visibility: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: 0.5s ease-in-out;
+  background-color: pink;
 }
 .item {
   width: 100%;
@@ -131,6 +137,13 @@ img {
 .hamb-menu .icono label {
   display: flex;
   cursor: pointer;
+}
+.hamb-menu .items {
+    max-height: 0;
+}
+#hamb-menu:checked ~ .items, #hamb-menu:checked ~ .hamb-menu {
+    visibility: visible;
+    max-height: 500px;
 }
 /*Desktop*/
 
@@ -159,10 +172,8 @@ img {
     justify-content: space-between;
     flex-direction: row;
   }
-  .hamb-menu .icono {
-    width: ;
-  }
   .items {
+    visibility: visible;
     min-width: 30%;
   flex-direction: row; 
   }
