@@ -82,6 +82,11 @@ img {
     align-items: center;
     justify-content: space-between;    
 }
+.icono{
+    width: fit-content;
+    font-weight: 600;
+    padding: 1.01em;
+}
 /*Desktop*/
 
 @media screen and (width > 900px) {
