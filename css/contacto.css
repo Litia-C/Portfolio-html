@@ -1,5 +1,11 @@
-.no-hamburger{
-    padding: 2em;
+img {
+    border-radius: 20%;
+}
+img {
+    margin-top: 1em;
+}
+main {
+    align-content: center;
 }
 .telefono::marker {
     content: "📞";
