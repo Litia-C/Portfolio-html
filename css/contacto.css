@@ -22,3 +22,26 @@ main {
 .ciudad::marker {
     content: "📍";
 }
+@media screen and (min-width: 600px){
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        align-content: center;
+    }
+    li, a {
+        font-size: 1.5rem;
+    }
+    
+    ul {
+        grid-area: "a";
+        align-self: center;
+        justify-self: center;
+    }
+    img{
+        grid-area: "b";
+        height: 25em;
+    }
+
+
+}
