@@ -29,7 +29,7 @@ main {
         grid-template-areas: "a b";
         align-content: center;
     }
-    li, a {
+    li, li > a {
         font-size: 1.5rem;
     }
     

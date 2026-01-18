@@ -184,7 +184,7 @@ img {
     visibility: visible;
     min-width: 30%;
   flex-direction: row; 
-  overflow: hidden;
+  
   transition: 0.5s;
   }
   .icono {
@@ -192,6 +192,7 @@ img {
     justify-content: flex-start;
   }
   .item{
+    visibility: visible;
     width: fit-content;
     padding: 0 2em;
     border-radius: 20px;
@@ -208,4 +209,5 @@ img {
   .hamb-menu label::before {
     display: none;
   }
+  
 }
