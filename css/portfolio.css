@@ -3,6 +3,7 @@ img {
     height: 300px;
     padding: 0.4em;
     background-color: black;
+    box-shadow: 0 0px 9px 4px;
 }
 
 .fotos {
