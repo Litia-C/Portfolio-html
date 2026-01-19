@@ -75,9 +75,7 @@ tr {
     content: "✒️";
 }
 @media screen and (width > 900px) {
-* {
-    font-size: 1.01em;
-}
+
 .InfoHeader {
     display: grid;
 }
