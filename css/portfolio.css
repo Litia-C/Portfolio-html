@@ -7,7 +7,6 @@ img {
 .fotos > img {
     background-color: black;
     box-shadow: 0 0px 9px 4px;
-
 }
 
 .fotos {
@@ -18,19 +17,14 @@ img {
 
 .llavero img {
     box-shadow: 0 0 0 0;
-
 }
 /* Animaciones */
-.llavero {
-    display: flex;
-}
-.chifura {
 
+.chifura {
     display: flex;
    position: relative;
    top: 0;
    left: 0;
-   
 }
 #chifura1 {
     visibility: hidden;
@@ -189,4 +183,11 @@ img {
         visibility: hidden;
         transform: rotateY(360deg);
     }
+}
+/*Desktop*/
+
+@media screen and (min-width: 600px){
+.llavero {
+    display: flex;
+}
 }
