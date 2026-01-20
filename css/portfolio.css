@@ -12,10 +12,13 @@ img {
 
 .fotos {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+.llavero {
+    justify-content: center;
+}
 .llavero img {
     box-shadow: 0 0 0 0;
 }
@@ -139,7 +142,7 @@ img {
     75%{
         transform: rotateY(270deg);
         visibility: visible;
-    }x
+    }
     
     99%{
         transform: rotateY(356.4deg);
