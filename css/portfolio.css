@@ -2,12 +2,132 @@ img {
     margin: 1.2em;
     height: 300px;
     padding: 0.4em;
+}
+
+.fotos > img {
     background-color: black;
     box-shadow: 0 0px 9px 4px;
+
 }
 
 .fotos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.llavero img {
+    box-shadow: 0 0 0 0;
+
+}
+/* Animaciones */
+.chifura {
+
+    display: flex;
+   position: relative;
+   top: 0;
+   left: 0;
+   
+}
+#chifura1 {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+#chifura2 {
+    visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: reemplazo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+@keyframes rotar {
+    
+    0% {
+        transform: rotateY(0deg);
+        visibility: visible;
+    }
+    24%{
+        transform: rotateY(86.4deg);
+        visibility: visible;
+    }
+    25%{
+        transform: rotateY(90deg);
+        visibility: hidden;
+    }
+    49%{
+        transform: rotateY(176.4deg);
+        visibility: hidden;
+    }
+    50%{
+        transform: rotateY(180deg);
+        visibility: hidden;
+    }
+    74%{
+        transform: rotateY(266.4deg);
+        visibility: hidden;
+    }
+    75%{
+        transform: rotateY(270deg);
+        visibility: visible;
+    }x
+    
+    99%{
+        transform: rotateY(356.4deg);
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+        transform: rotateY(360deg);
+    }
+}
+@keyframes reemplazo {
+    
+    0% {
+        transform: rotateY(0deg);
+        visibility: hidden;
+    }
+    24%{
+        transform: rotateY(86.4deg);
+        visibility: hidden;
+    }
+    25%{
+        transform: rotateY(90deg);
+        visibility: visible;
+    }
+    49%{
+        transform: rotateY(176.4deg);
+        visibility: visible;
+    }
+    50%{
+        transform: rotateY(180deg);
+        visibility: visible;
+    }
+    74%{
+        transform: rotateY(266.4deg);
+        visibility: visible;
+    }
+    75%{
+        transform: rotateY(270deg);
+        visibility: hidden;
+    }x
+    
+    99%{
+        transform: rotateY(356.4deg);
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+        transform: rotateY(360deg);
+    }
 }
