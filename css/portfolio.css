@@ -21,6 +21,9 @@ img {
 
 }
 /* Animaciones */
+.llavero {
+    display: flex;
+}
 .chifura {
 
     display: flex;
@@ -41,6 +44,34 @@ img {
     animation-delay: 0;
 }
 #chifura2 {
+    visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: reemplazo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+.momo {
+    display: flex;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+#momo1 {
+        visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+#momo2 {
     visibility: hidden;
     position: relative;
     top: 0;
