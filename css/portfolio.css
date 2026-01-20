@@ -19,7 +19,7 @@ img {
     box-shadow: 0 0 0 0;
 }
 
-img:hover {
+.fotos img:hover {
     height: 330px;
     transition: 0.5s;
 }
