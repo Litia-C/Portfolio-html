@@ -72,6 +72,15 @@ footer {
   background-color: palevioletred;
   background-size: cover;
 }
+footer p {
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: blue;
+}
 
 /* Botones */
 .boton-subir {
