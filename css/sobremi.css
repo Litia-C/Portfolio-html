@@ -1,4 +1,9 @@
 
+h1::after {
+  content: "Sobre mí";
+  right: 3.93em;
+
+}
 
 /*Info principal*/
 

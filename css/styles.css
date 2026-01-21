@@ -1,6 +1,4 @@
-/*Colores*/
-:root {
-}
+
 /* Detalles generales */
 html {
   scroll-behavior: smooth;
@@ -21,9 +19,16 @@ html {
     sans-serif;
 }
 h1 {
-    margin: 0 2em;
+  z-index: 2;
+  margin: 0 2em;
   font-size: 1.3em;
 }
+h1::after {
+  z-index: -1;
+  position: relative;
+  color: palevioletred;
+}
+
 h2 {
   font-size: 1.2em;
 }

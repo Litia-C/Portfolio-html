@@ -1,7 +1,10 @@
-img {
-    border-radius: 20%;
+h1::after {
+  content: "Contacto";
+  right: 3.97em;
+
 }
 img {
+    border-radius: 20%;
     margin-top: 1em;
 }
 main {
