@@ -182,7 +182,7 @@ img {
     75%{
         transform: rotateY(270deg);
         visibility: hidden;
-    }x
+    }
     
     99%{
         transform: rotateY(356.4deg);
