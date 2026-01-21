@@ -79,6 +79,20 @@ tr {
 .softskills > ul > li:hover::marker {
     content: "✒️";
 }
+
+/*CV*/
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cv > a {
+    font-size: 2em;
+}
+
 @media screen and (width > 900px) {
 
 .InfoHeader {
