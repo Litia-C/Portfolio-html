@@ -67,6 +67,7 @@ main {
 footer {
   max-height: fit-content;
   margin-top: 2em;
+  margin-bottom: 2em;
   position: relative;
   text-align: center;
   background-color: palevioletred;
