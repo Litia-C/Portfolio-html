@@ -89,6 +89,14 @@ footer a:hover {
   bottom: 2rem;
   position: fixed;
 }
+.boton-subir > img {
+  height: 5em;
+}
+.boton-subir:hover{
+  border-radius: 50%;
+background: #eeddae;
+background: radial-gradient(circle, rgba(238, 221, 174, 0.4) 0%, rgba(237, 203, 189, 0.39) 25%, rgba(236, 187, 202, 0.23) 47%, rgba(235, 172, 214, 0.24) 68%, rgba(234, 165, 220, 0.01) 78%, rgba(233, 148, 233, 0) 100%);
+}
 
 /* Menu */
 
