@@ -198,6 +198,16 @@ img {
         transform: rotateY(360deg);
     }
 }
+
+/*Programas*/
+.programacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+.programacion img, .programacion a{
+    align-self: center;
+}
 /*Desktop*/
 
 @media screen and (min-width: 600px){
