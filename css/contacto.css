@@ -25,7 +25,7 @@ main {
 .ciudad::marker {
     content: "📍";
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     .info {
         display: grid;
         grid-template-columns: 1fr 1fr;
