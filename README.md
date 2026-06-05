@@ -7,4 +7,4 @@ Este proyecto fue creado para el ciclo formativo como trabajo para poner a prueb
 El código se divide en diferentes archivos de estilos para dividir los cambios específicos y los generales, con diferentes archivos HTML que representan diferentes ventanas accesibles desde la página, a parte de una carpeta de assets para guardar todo el material cargado dentro del proyecto.
 
 ## Página web:
-[Enlace a la página web](https://portfolio-html-mbe29lrxm-litias-projects.vercel.app/)
+[Enlace a la página web](https://litiacportfolio.vercel.app/)
